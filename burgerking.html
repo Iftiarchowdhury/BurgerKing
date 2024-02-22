@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burger King</title>
+    <title>Burger king </title>
     <style>
         * {
             padding: 0;
@@ -12,81 +12,150 @@
             box-sizing: border-box;
         }
 
-        /* Navbar style start  */
-        /*banna stye start */
+        /* navbar stye start */
+        .navbar {
+            background-color: rgb(206, 168, 122);
+            padding: 30px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .list {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            ga
+        }
+
+        ul li {
+            padding: 10px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+            list-style: none;
+        }
+
+        a:hover {
+            color: rgb(100, 55, 163);
+        }
+
+        /* navbar stye end */
+
+
+        /* bennerr stye start */
         .banner {
-            background-color: rgb(176, 25, 25);
+            background-color: brown;
             display: flex;
             justify-content: space-between;
-
         }
 
-        .bannertext {
-            color: bisque;
-            text-align: center;
-            padding: 50px;
-            vertical-align: inherit;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        .bannerindex h1 {
+            padding: 90px;
+            color: white;
         }
 
-        /*main section style start */
-        .mainsec1 {
-            padding: 60px 50px;
+        .bannerindex a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* bennerr stye end */
+
+
+        /* main section 1 style start */
+        .section1 {
+            padding-top: 60px;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-betweens;
+        }
 
+        .mainindex1 {
+            padding: 30px;
 
         }
-        .mainsec2{
-            padding: 60px;
-        }
-        .mainindex2{
-            background-color: bisque;
-            padding: 50;
-            display: flex;
-            justify-content: space-between;
+
+        .mainindex2 {
+            padding: 20px;
         }
     </style>
 </head>
 
+
+
+
 <body>
-
-
-
     <header>
         <div class="navbar">
-            <ul>
-                <li><a href="">Products </a></li>
-                <li><a href=""> campaigns</a></li>
-                <li><a href="">Home delivery</a></li>
-                <li><a href="">Find a restaurants</a></li>
-                <li><a href="">customer Service</a></li>
-                <li><a href="">burger King</a> </li>
+
+            <ul class="list">
+                <li> <a href="#">Home delivery</a></li>
+                <li> <a href="#">Products</a></li>
+                <li> <a href="#">Campaigns</a></li>
+                <li> <a href="#">Find a restuarant</a></li>
+
 
             </ul>
+            <img src="./assets/BK_logo.png" alt="" height="80" width="80">
+            <div>
+                <ul style="display: flex; justify-content: center;align-items: center;">
+                    <li> <a href="#">Customer feedback</a></li>
+                    <li> <a href="#">burger king</a></li>
+                </ul>
+            </div>
+
         </div>
         <div class="banner">
 
-
-            <div class="bannertext">
-                <h1> flame grilled <p>since 1954</p>
+            <div class="bannerindex">
+                <h1> Flame grilled <p> since 1954</p>
                 </h1>
-                <br> <br>
-                <a href=""> Find your nearby restaurants</a>
 
+                <div> <a href="#">Find your nearest restuarant</a></div>
             </div>
-            <div>
-                <img src="./html/assets/hero-alpha.png.webp" alt="" height="427" width="482">
-
+            <div class="bannerpic">
+                <img src="./assets/hero-alpha.png.webp" alt="" height="427" width="482">
             </div>
         </div>
     </header>
-    <main>
-        
+
+
+    <main style="background-color: rgb(236, 210, 177);">
+        <div class="section1">
+            <div class="mainindex1">
+                <img src="./assets/mainpic.webp" alt="" width="450" height="300.29">
+            </div>
+            <div class="mainindex2">
+                <div>
+                    <h1> There is no fire without smoke!</h1>
+                <br> <br>
+                <p><b> The smell of smoke wafts around Burger King and the reason is clear: the new Smoky Chipotle
+                        Steakhouse is here!</b></p>
+                <br> <br>
+                <p> The flame-grilled novelty is available with one or two beef steaks, as well as Chicken TENDERCRISP®
+                    steak. Even vegetarians won't be left cold, as there is also Smoky Chipotle Plant-based as an
+                    option.
+
+                    On sale for a limited time (Not in restaurants at Helsinki-Vantaa Airport).</p>
+                </div>
+                 
+                <div>
+                    <a href="#"> See Products information </a>
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
     </main>
-       
-       
-       
+    <footer></footer>
+
 </body>
 
 </html>
