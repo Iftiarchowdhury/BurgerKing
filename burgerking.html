@@ -15,9 +15,13 @@
         /* navbar stye start */
         .navbar {
             background-color: rgb(206, 168, 122);
-            padding: 30px 0;
+            padding: 10px 0;
             display: flex;
             justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            
+  
         }
 
         .list {
@@ -29,6 +33,7 @@
 
         ul li {
             padding: 10px;
+            list-style: none;
         }
 
         ul li a {
@@ -46,20 +51,29 @@
 
         /* bennerr stye start */
         .banner {
-            background-color: brown;
+            background-color: #d21a1a;
             display: flex;
             justify-content: space-between;
+            padding-top: 60px;
         }
 
         .bannerindex h1 {
             padding: 90px;
-            color: white;
+            color: #f5ebdc;
+            font-size: 50px;
+            font-weight: 800;
+            font-family: ;
         }
 
-        .bannerindex a {
-            text-decoration: none;
-            color: white;
+        .bannerindex button {
+            padding: 20px;
+            border: 3px solid #f5ebdc;
+            border-radius: 15px;
+            margin-left: 85px;
+            color: #d21a1a;
+            background-color: bisque;
         }
+
 
         /* bennerr stye end */
 
@@ -86,13 +100,16 @@
 
         /* main section 2 style start */
         .section2 {
-            padding-top: 60px;
+            padding-top: 70px;
             display: flex;
             justify-content: space-between;
+            background-color: white;
+            height: 700px;
         }
 
         .mainindex3 {
             padding: 50px;
+          
         }
 
         .mainindex3 a {
@@ -102,11 +119,25 @@
 
         .mainindex4 {
             padding: 50px;
+            border-radius: 12px;
+        }
+        .container1{
+            background-color:bisque;
+            height: 500px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+
         }
 
         /* main section 3 style start */
         .section3 h1 {
             padding: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 400;
+            color: #502314;
+            font-size: 4rem;
+            line-height: 1.7
         }
 
         .section3a {
@@ -114,9 +145,73 @@
             justify-content: space-around;
         }
 
-        .section3a image {
+        .section3a .card1 {
             background-color: white;
-            border: 3px solid white;
+            border-radius: 12px;
+            height: 300px;
+            width: 250px;
+            color:  rgba(120, 36, 36, 0.801);
+        }
+
+        .cardimg {
+            height: 160px;
+            width: 190px;
+            background-color: rgb(234, 206, 154);
+            margin-left: 30px;
+            margin-top: 30px;
+
+        }
+
+        .section3a .card2 {
+            background-color: white;
+            border-radius: 12px;
+            height: 300px;
+            width: 250px;
+            color:  rgba(120, 36, 36, 0.801);
+        }
+        .cardimg2 {
+            height: 160px;
+            width: 190px;
+            background-color: rgb(234, 206, 154);
+            margin-left: 30px;
+            margin-top: 30px;
+
+        }
+
+        .section3a .card3 {
+            background-color: white;
+            border-radius: 12px;
+            height: 300px;
+            width: 250px;
+            color:  rgba(120, 36, 36, 0.801);
+        }
+        .cardimg3 {
+            height: 160px;
+            width: 190px;
+            background-color: rgb(234, 206, 154);
+            margin-left: 30px;
+            margin-top: 30px;
+
+        }
+
+        .section3a .card4 {
+            background-color: whitesmoke;
+            border-radius: 12px;
+            height: 300px;
+            width: 250px;
+            color:  rgba(120, 36, 36, 0.801);
+           
+        }
+        ..section3a .card4 h1{
+            font-size: 4 rem;
+        }
+        .cardimg4 {
+            height: 160px;
+            width: 190px;
+            background-color: rgb(234, 206, 154);
+            margin-left: 30px;
+            margin-top: 30px;
+
         }
 
         /* main section 4 style start */
@@ -129,7 +224,8 @@
             padding: 40px;
 
         }
-        .section4a{
+
+        .section4a {
             padding: 40px;
         }
     </style>
@@ -165,7 +261,7 @@
                 <h1> Flame grilled <p> since 1954</p>
                 </h1>
 
-                <div> <a href="#">Find your nearest restuarant</a></div>
+                <button> Find your nearest restuarant</button>
             </div>
             <div class="bannerpic">
                 <img src="./assets/hero-alpha.png.webp" alt="" height="427" width="482">
@@ -208,66 +304,89 @@
         </div>
 
         <div class="section2">
+           <div class="container1">
             <div class="mainindex3">
                 <div>
                     <h1>Burger King now on your phone</h1>
                     <br> <br>
 
-                    <p>You can now find all benefit coupons and offers in the Burger King Suomi application. Earn MyBK
-                        points with your purchases, which will give you tasty rewards!</p>
+                    <p>You can now find all benefit coupons and offers in the Burger King Suomi application. </p> 
+                    <p> Earn MyBK points with your purchases, which will give you tasty rewards!</p>
                 </div>
                 <br> <br>
                 <div style="padding: 30px;"> <a href="#"
                         style="padding: 20px; border: 3px solid red; border-radius: 12px;"> Download the BK app</a>
                 </div>
             </div>
+
             <div class="mainindex4"> <img src="./assets/bkapp.webp" alt="" height="300.29" width="450"></div>
+           </div>
         </div>
+
+
+
 
         <div class="section3">
             <h1> We recommend these!</h1>
             <div class="section3a">
-                <div class="image"><img
-                        src="./assets/BK_Menukuvat_nettisivuille_Cheese_Lover_1080x1080px_121022-848x848.png.webp"
-                        alt="" height="150" width="150"> <br>
-                    <h1> cheese lover </h1>
+                <div class="card1">
+                    <div class="cardimg"><img
+                            src="./assets/BK_Menukuvat_nettisivuille_Cheese_Lover_1080x1080px_121022-848x848.png.webp"
+                            alt="" height="150" width="150"> <br>
+                        <h2> cheese lover</h2>
+                    </div>
                 </div>
-                <div class="image"><img
-                        src="./assets/BK_Menukuvat_nettisivuille_Chili_Cheese_Bite_4kpl_1080x1080px_092021-848x848.png.webp"
-                        alt="" height="150" width="150"> <br>
-                    <h1> chili cheese bite</h1>
+                <div class="card2">
+                    <div class="cardimg2"> <img
+                            src="./assets/BK_Menukuvat_nettisivuille_Chili_Cheese_Bite_4kpl_1080x1080px_092021-848x848.png.webp"
+                            alt="" height="150" width="150"></div> <br>
+                    <h2> chili cheese bite</h2>
                 </div>
-                <div class="image"><img
-                        src="./assets/BK_Menukuvat_nettisivuille_PB_Nuggets_6kpl_1080x1080px_022022-848x848.png.webp"
-                        alt="" height="150" width="150"> <br>
-                    <h1> nuggets 6kpl </h1>
+                <div class="card3">
+                    <div class="cardimg3"><img
+                            src="./assets/BK_Menukuvat_nettisivuille_PB_Nuggets_6kpl_1080x1080px_022022-848x848.png.webp"
+                            alt="" height="150" width="150"></div> <br>
+                    <h2> nuggets 6kpl </h2>
                 </div>
-                <div class="image"><img
-                        src="./assets/BK_Menukuvat_nettisivuille_Whopper_1080x1080px_0620213-848x848.png.webp" alt=""
-                        height="150" width="150"> <br>
-                    <h1> Whopper</h1>
+                <div class="card4">
+                    <div class="cardimg4"> <img
+                            src="./assets/BK_Menukuvat_nettisivuille_Whopper_1080x1080px_0620213-848x848.png.webp"
+                            alt="" height="150" width="150"> </div><br>
+                    <h2> Whopper</h2>
                 </div>
             </div>
         </div>
+
+
+
+
+
+
+
+
         <div class="section4">
             <h1> Topical</h1>
             <div class="section4a">
-                <div> <img src="./assets/kings deal.webp" alt="" height="200" width="200">
+                <div> <img src="./assets/kings deal.webp" alt="" height="200" width="200" style=" border-radius: 12px;">
                     <h1> <a href="#" style="text-decoration: none; color: brown;">Kingein diili!</a></h1>
-                    <p>Nyt saat kaksi Whopper Jr. tai Crispy Chicken ateriaa 10 €. Hyödynnä yksin tai yhdessä!</p> <br>
+                    <p>Nyt saat kaksi Whopper Jr. </p> 
+                    <p>tai Crispy Chicken ateriaa 10 €. Hyödynnä yksin tai yhdessä!</p><br>
                     <p> <a href=""> read more </a></p>
 
                 </div>
-                <div> <img src="./assets/2 meals.webp" alt="" height="200" width="200">
+                <div> <img src="./assets/2 meals.webp" alt="" height="200" width="200" style=" border-radius: 12px;">
                     <h1> <a href="#" style="text-decoration: none; color: brown;"> 2 meals 10 £</a></h1>
-                    <p>King Jr. lastenaterioissa nyt minikirjoja, joissa useita erilaisia PJ Masks figuurihahmoja. 1 kpl
-                        / ateria.</p> <br>
+                    <p>King Jr. lastenaterioissa nyt minikirjoja. </p> 
+                    <p>joissa useita erilaisia PJ Masks figuurihahmoja. 1 kpl
+                        / ateria.</p><br>
                     <p> <a href=""> read more </a></p>
                 </div>
-                <div> <img src="./assets/PJ_Masks_Banneri-1024x766.png.webp" alt="" height="200" width="200">
+                <div> <img src="./assets/PJ_Masks_Banneri-1024x766.png.webp" alt="" height="200" width="200" style=" border-radius: 12px;"> 
                     <h1> <a href="#" style="text-decoration: none; color: brown;">PJ Masks-lelukampanja
                         </a></h1>
-                    <p> Hyödynnä pikkurahalla edulliset KingiDiili-tuotteet. Esim. Juustohampurilainen vain 2 €!</p> <br>
+                    <p> Hyödynnä pikkurahalla edulliset KingiDiili-tuotteet. </p>
+                    <p>Esim. Juustohampurilainen vain 2 €!</p>
+                    <br>
                     <p> <a href=""> read more </a></p>
                 </div>
 
